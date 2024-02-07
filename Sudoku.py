@@ -97,8 +97,20 @@ def solve(board, show_steps=False):
             if not show_steps:
                 print('Done!')
 
-            # Different boards
 
+def new_solve(board):
+    # Put all the cells that have to be solved in an array
+    empty_fields = []
+
+    for row_ind in range(len(board)):
+        for col_ind in range(len(board[0])):
+            if board[row_ind][col_ind] == 0:
+                empty_fields.append((row_ind, col_ind))
+
+
+
+
+# Different boards
 
 '''
 boardPreset = [
